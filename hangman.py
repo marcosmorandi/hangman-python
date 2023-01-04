@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 import random # Importação do módulo random (aleatório).
 from words import words # Do arquivo "words.py" importar a variavél "words".
 from hangman_visual import lives_visual_dict
