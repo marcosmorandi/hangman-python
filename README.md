@@ -6,8 +6,10 @@ Tente advinhar o nome de uma das centenas de linguagens de programação, em uso
 
 Use somente letras de A a Z, ignore números, espaços em branco ou caracteres especiais.
 
-Exemplo: Se achar que a resposta é "C#", digite "csharp", pode digitar maiúscula ou minúscula, o programa entente ambos.
+Exemplo: Se achar que a resposta é "C#", digite "csharp", pode digitar maiúscula ou minúscula, o programa entende ambos.
 
 Acaba quando acertar a palavra ou errar 7 vezes. Se nunca tiver ouvido falar na linguagem, ou não acreditar que ela tem aquele nome, tem uma surpresa no final.
 
-<img src="/hangamn-carton.jpg" />
+<p align="center">
+<img src=https://github.com/marcosmorandi/hangman-python/blob/main/hangman-cartoon.jpg >
+</p>
