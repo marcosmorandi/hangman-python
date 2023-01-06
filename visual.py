@@ -1,4 +1,4 @@
-lives_visual_dict = {
+lives_visual = {
         0: """
                 ___________
                | /        |
