@@ -6,4 +6,4 @@ Jogo da forca (hangman) em Python.
 [X] Criar visual do jogo.<br/>
 [X] Criar o jogo.<br/>
 [X] Corrigir bugs.<br/>
-[ ] Fazer melhorias.<br/>
+[X] Fazer melhorias.<br/>

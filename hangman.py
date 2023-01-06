@@ -1,5 +1,5 @@
 import random # Importação do módulo random (aleatório).
-from palavras import words # Do arquivo "words.py" importa a variável "words".
+from palavras import words # Do arquivo "palavras.py" importa a variável "words".
 from visual import lives_visual # Do arquivo "visual.py" importa a variável "lives_visual" responsável pelo "gráfico".
 import string # Importação do módulo string, não é consenso sua utilidade na versão atual do Python, mas por via das dúvidas não custa colocar.
 
@@ -11,11 +11,11 @@ def get_valid_word(words): # "def" cria a função "get_valid_word" com a variá
     return word.upper() # Retorna uma palavra e o ".upper()" converte em maiúscula.
 
 print('\n============================================================')
-print('                       Jogo da Forca                        ') # Titulo no início do jogo.
+print('                       Jogo da Forca                        ') # Título no início do jogo.
 print('============================================================')
 print(' Tente advinhar o nome de uma das centenas de linguagens    ')
 print('de programação em uso atual ou histórico.                   ')
-print(' Use somente letras de A a Z, ignore números, espaços em    ')
+print(' Use somente letras de A a Z, ignore números, espaços em    ') # Descrição e instruções.
 print('branco ou caracteres especiais.                             ')
 print(' Exemplo: Se achar que é "C#" digite "csharp".              ')
 print('============================================================')
@@ -57,9 +57,11 @@ def hangman(): # Cria a função do jogo.
     # Chega aqui quando as letras que faltam advinhar ou as vidas forem 0.
     if lives == 0: # Se vidas 0:
         print(lives_visual[lives]) # Imprime imagem final da forca.
-        print('Você morreu! A palavra era', word, "!\n") # Imprime mensagem e qual era a palavra. 
+        print('Você morreu! A palavra era', word, '!\n') # Imprime mensagem e qual era a palavra.
+        print('Leia mais sobre a linguagem em https://en.wikipedia.org/wiki/List_of_programming_languages \n') # Um link com mais informações sobre a linguagem.
     else: # Senão:
         print('Você sobreviveu! A palavra era', word, '!\n') # Imprime mensagem e qual era a palavra. Nesse caso o "\n" deixa espaço na linha abaixo.
+        print('Leia mais sobre a linguagem em https://en.wikipedia.org/wiki/List_of_programming_languages \n') # Um link com mais informações sobre a linguagem.
 
 
 if __name__ == '__main__':
