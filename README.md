@@ -10,6 +10,7 @@ Exemplo: Se achar que a resposta é "C#", digite "csharp", pode digitar maiúscu
 
 Acaba quando acertar a palavra ou errar 7 vezes. Se nunca tiver ouvido falar na linguagem, ou não acreditar que ela tem aquele nome, tem uma surpresa no final.
 
+
 <p align="center">
 <img src=https://github.com/marcosmorandi/hangman-python/blob/main/hangman-cartoon.jpg >
 </p>
