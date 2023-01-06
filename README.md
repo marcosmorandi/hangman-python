@@ -1,9 +1,13 @@
-# hangman-python
+# Jogo da forca, Hangman, em Python.
+Divertido jogo para testar o conhecimento ou aprender novas palavras.
 
-Jogo da forca (hangman) em Python.
+## Descrição
+Tente advinhar o nome de uma das centenas de linguagens de programação, em uso atual ou histórico, listados no jogo.
 
-[X] Criar lista de palavras.<br/>
-[X] Criar visual do jogo.<br/>
-[X] Criar o jogo.<br/>
-[X] Corrigir bugs.<br/>
-[X] Fazer melhorias.<br/>
+Use somente letras de A a Z, ignore números, espaços em branco ou caracteres especiais.
+
+Exemplo: Se achar que a resposta é "C#", digite "csharp", pode digitar maiúscula ou minúscula, o programa entente ambos.
+
+Acaba quando acertar a palavra ou errar 7 vezes. Se nunca tiver ouvido falar na linguagem, ou não acreditar que ela tem aquele nome, tem uma surpresa no final.
+
+<img src="/hangamn-carton.jpg" />

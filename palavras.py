@@ -673,4 +673,4 @@ words = [
     "ZPlusPlus",
     ]
 
-# fonte: https://en.wikipedia.org/wiki/List_of_programming_languages
+# Fonte: https://en.wikipedia.org/wiki/List_of_programming_languages

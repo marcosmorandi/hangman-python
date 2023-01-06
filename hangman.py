@@ -3,6 +3,7 @@ from palavras import words # Do arquivo "palavras.py" importa a variável "words
 from visual import lives_visual # Do arquivo "visual.py" importa a variável "lives_visual" responsável pelo "gráfico".
 import string # Importação do módulo string, não é consenso sua utilidade na versão atual do Python, mas por via das dúvidas não custa colocar.
 
+# Depois que tirei manualemnte hífens, numeros e espaços em branco das palavras a função abaixo, ficou obsoleta. Teria que mexer em várias partes do código para arrumar tudo.
 def get_valid_word(words): # "def" cria a função "get_valid_word" com a variável "words", ou seja, palavra válida, que no caso é sem hífen ou espaço.
     word = random.choice(words)  # Aleatóriamente escolhe uma palavra da lista.
     while '-' in word or ' ' in word: # Enquanto for escolhida palavra com hífens ou espaço...
@@ -14,10 +15,11 @@ print('\n============================================================')
 print('                       Jogo da Forca                        ') # Título no início do jogo.
 print('============================================================')
 print(' Tente advinhar o nome de uma das centenas de linguagens    ')
-print('de programação em uso atual ou histórico.                   ')
+print('de programação, em uso atual ou histórico, listados no jogo.')
 print(' Use somente letras de A a Z, ignore números, espaços em    ') # Descrição e instruções.
 print('branco ou caracteres especiais.                             ')
-print(' Exemplo: Se achar que é "C#" digite "csharp".              ')
+print(' Exemplo: Se achar que a resposta é "C#", digite "csharp",  ')
+print('pode digitar maiúscula ou minúscula, programa entende ambos.')
 print('============================================================')
 
 
@@ -63,6 +65,4 @@ def hangman(): # Cria a função do jogo.
         print('Você sobreviveu! A palavra era', word, '!\n') # Imprime mensagem e qual era a palavra. Nesse caso o "\n" deixa espaço na linha abaixo.
         print('Leia mais sobre a linguagem em https://en.wikipedia.org/wiki/List_of_programming_languages \n') # Um link com mais informações sobre a linguagem.
 
-
-if __name__ == '__main__':
-    hangman()
+hangman() # Chama a função que inicia o jogo. Importante!!! Se o código no Python estiver indentado de maneira incorreta, ele não funciona.
