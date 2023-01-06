@@ -1,5 +1,5 @@
 import random # Importação do módulo random (aleatório).
-from words import words # Do arquivo "words.py" importa a variável "words".
+from palavras import words # Do arquivo "words.py" importa a variável "words".
 from visual import lives_visual # Do arquivo "visual.py" importa a variável "lives_visual" responsável pelo "gráfico".
 import string # Importação do módulo string, não é consenso sua utilidade na versão atual do Python, mas por via das dúvidas não custa colocar.
 
@@ -10,9 +10,16 @@ def get_valid_word(words): # "def" cria a função "get_valid_word" com a variá
 
     return word.upper() # Retorna uma palavra e o ".upper()" converte em maiúscula.
 
-print('\n==================================================')
-print('                 Jogo da Forca                    ') # Titulo no início do jogo.
-print('==================================================')
+print('\n============================================================')
+print('                       Jogo da Forca                        ') # Titulo no início do jogo.
+print('============================================================')
+print(' Tente advinhar o nome de uma das centenas de linguagens    ')
+print('de programação em uso atual ou histórico.                   ')
+print(' Use somente letras de A a Z, ignore números, espaços em    ')
+print('branco ou caracteres especiais.                             ')
+print(' Exemplo: Se achar que é "C#" digite "csharp".              ')
+print('============================================================')
+
 
 def hangman(): # Cria a função do jogo.
     word = get_valid_word(words) # Recebe uma palavra válida.
