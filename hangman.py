@@ -30,7 +30,7 @@ def hangman(): # Cria a função do jogo.
         print(lives_visual[lives]) # Imprime o gráfico referente a quantidade de vidas restantes.
         print('Palavra atual: ', ' '.join(word_list)) # Imprime as letras corretas ou "-". 
 
-        user_letter = input('\nAdvinhe uma letra: ').upper() # Retorna letra digitada pelo usuário em maiúscula.
+        user_letter = input('\nAdvinhe uma letra: ').upper() # Recebe e transforma letra digitada pelo usuário em maiúscula.
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
             if user_letter in word_letters:
