@@ -1,15 +1,15 @@
 import random # Importação do módulo random (aleatório).
 from palavras import words # Do arquivo "palavras.py", importa a variável "words".
 from visual import lives_visual # Do arquivo "visual.py", importa a variável "lives_visual", responsável pelo "gráfico".
-import string # Importação do módulo string, não é consenso sua utilidade na versão atual do Python, mas para evitar problemas não custa importar.
+import string # Importação do módulo string, sem ele o "alphabet" ou outras strings podem não funcionar corretamente.
 
-# Depois que tirei manualmente hifens, numeros e espaços em branco das palavras, a função abaixo ficou obsoleta. Não quis mexer em várias partes do código pelo prazo de entrega.
+# Depois que tirei manualmente hifens, numeros e espaços em branco das palavras, a função abaixo ficou obsoleta. Não quis mexer para não quebrar o código e pelo prazo de entrega.
 def get_valid_word(words): # "def" cria a função "get_valid_word" com a variável "words", ou seja, palavra válida, que no caso é sem hífen ou espaço.
     word = random.choice(words)  # Aleatóriamente escolhe uma palavra da lista.
-    while '-' in word or ' ' in word: # Enquanto for escolhida palavra com hifens ou espaço...
+    while '-' in word or ' ' in word: # Enquanto for escolhida palavra com hifens ou espaço:
         word = random.choice(words) # Repete o comando de escolha de palavra aleatória.
 
-    return word.upper() # Retorna uma palavra e o ".upper()" converte em maiúscula.
+    return word.upper() # Retorna uma palavra e o ".upper()" converte em maiúscula. No Python "A" é diferente de "a".
 
 print('\n============================================================')
 print('                       Jogo da Forca                        ') # Título no início do jogo.
@@ -25,13 +25,13 @@ print('============================================================')
 
 def hangman(): # Cria a função do jogo.
     word = get_valid_word(words) # Variável que recebe uma palavra válida da variável importada "words".
-    word_letters = set(word)  # "set()" é usado para armazenar múltiplos itens em uma única variável. Criada a variável "word_letters" ou letras_na_palavra. 
-    alphabet = set(string.ascii_uppercase) # Declarada variável "alphabet", que vai receber múltiplos strings ASCII e transformar em maiúsculas, "string.ascii_uppercase".
-    used_letters = set()  # Variável que armazena letras já usadas.
+    word_letters = set(word)  # "set()" é usado para armazenar múltiplos itens em uma única variável. Criada a variável "word_letters" ou letras_na_palavra.
+    alphabet = set(string.ascii_uppercase) # Importa alfabeto no código padrão americano (ASCII), em maiúsculas, "set(string.ascii_uppercase)". Python é casesensitive, "A" difere de "a".
+    used_letters = set()  # Variável que armazena letras já acertadas.
 
     lives = 7 # Define a quantidade de vidas como 7 através da variável "lives recebe 7".
 
-    # Obtendo entrada do usuário.
+    # Obtendo entrada do usuário. Usando o loop enquanto "while", até o jogo acabar.
     while len(word_letters) > 0 and lives > 0: # Enquanto as letras da palavra e as vidas forem maior que 0:
         print('\nVocê tem', lives, 'vidas restantes e já usou essas letras: ', ' '.join(used_letters)) # Imprime quantas vidas restam e junta pelo ".join", as letras já usadas.
 
@@ -39,24 +39,24 @@ def hangman(): # Cria a função do jogo.
         print(lives_visual[lives]) # Imprime o gráfico referente a quantidade de vidas restantes.
         print('Palavra atual: ', ' '.join(word_list)) # Imprime as letras corretas já digitadas ou "-" para as que faltam.
 
-        user_letter = input('\nAdvinhe uma letra: ').upper() # Recebe pelo "input" e transforma a letra digitada pelo usuário em maiúscula pelo ".upper()".
-        if user_letter in alphabet - used_letters: #......................................................
-            used_letters.add(user_letter) # .add() adiciona um elemento se ele não já estiver presente. No caso ao "used_letter" ou letras_usadas.
-            if user_letter in word_letters: # Se a letra recebida estiver nas letras da palavra a ser advinhada...
-                word_letters.remove(user_letter) # .remove() remove a letra digitada pelo usuário da palavra a ser advinhada.
-                print('') # Não imprime nada agora e volta para a imagem anterior de vidas restantes com a letra em "...já usou essas letras:...".
+        user_letter = input('\nAdvinhe uma letra: ').upper() # Recebe pelo "input" e transforma a letra digitada pelo usuário em maiúscula pelo ".upper()". No Python "A" é diferente de "a".
+        if user_letter in alphabet - used_letters: # Se for uma letra válida do alfabeto, não usada ainda:
+            used_letters.add(user_letter) # .add() adiciona um elemento se ele não já estiver presente. No caso ao "used_letters" ou letras_usadas.
+            if user_letter in word_letters: # Se a letra recebida estiver nas letras da palavra a ser advinhada:
+                word_letters.remove(user_letter) # .remove() remove a letra digitada pelo usuário da palavra a ser advinhada. Remove do "word_letters".
+                print('') # Foi a solução para deixar espaço entre linhas ao acertar a ultima letra.
 
             else: # Senão:
                 lives = lives - 1  # Tira uma vida por errar.
-                print('\nA letra,', user_letter, 'não está na palavra.') # Imprime a mensagem e mostra que a letra escolhida não está na palavra.
+                print('\nA letra,', user_letter, 'não está na palavra.') # Imprime a mensagem e mostra que a letra escolhida não está na palavra. "\n" deixa espaço na linha acima.
 
-        elif user_letter in used_letters: # Senão se repetir uma letra.
+        elif user_letter in used_letters: # Senãose repetir uma letra:
             print('\nVocê já usou essa letra. Tente outra.') # Imprime mensagem. "\n" quebra a linha, deixando um espaço na linha acima.
 
         else: # Senão:
             print('\nLetra ou caracter inválido.') # Imprime mensagem.
 
-    # Chega aqui quando as letras que faltam advinhar ou as vidas forem 0.
+    # Chega aqui quando as letras que falta advinhar ou as vidas forem 0.
     if lives == 0: # Se vidas igual 0:
         print(lives_visual[lives]) # Imprime imagem final da forca.
         print('Você morreu! A palavra era', word, '!\n') # Imprime mensagem e qual era a palavra.
