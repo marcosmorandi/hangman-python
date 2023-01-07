@@ -15,11 +15,11 @@ print('\n============================================================')
 print('                       Jogo da Forca                        ') # Título no início do jogo.
 print('============================================================')
 print(' Tente advinhar o nome de uma das centenas de linguagens    ')
-print('de programação, em uso atual ou histórico, listados no jogo.')
+print('de programação listadas no jogo, em uso atual ou histórico. ')
 print(' Use somente letras de A a Z, ignore números, espaços em    ') # Descrição e instruções.
 print('branco ou caracteres especiais.                             ')
 print(' Exemplo: Se achar que a resposta é "C#", digite "csharp",  ')
-print('pode digitar maiúscula ou minúscula, programa entende ambos.')
+print('pode digitar maiúscula, minúscula, o programa entende ambas.')
 print('============================================================')
 
 

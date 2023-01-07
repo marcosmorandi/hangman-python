@@ -1,8 +1,9 @@
+# na linha 6 é utilizado o ANSI escape sequence, para cores no terminal.
 lives_visual = {
         0: """
                 ___________
                | /        |
-               |/       (x x)  
+               |/       \033[35m(x x)\033[m  
                |         /|\ 
                |         / \ 
                |           
