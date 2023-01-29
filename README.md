@@ -1,7 +1,10 @@
-# Jogo da forca, Hangman, em Python.
+# hangman-python
+
+# Descrição do projeto
+Jogo da Forca, Hangman, desenvolvido em Python.
+
 Divertido jogo para testar o conhecimento ou aprender novas palavras.
 
-## Descrição
 Tente advinhar o nome de uma das centenas de linguagens de programação, em uso atual ou histórico, listados no jogo.
 
 Use somente letras de A a Z, ignore números, hifens, espaços em branco ou caracteres especiais.
@@ -17,4 +20,11 @@ Se nunca tiver ouvido falar na linguagem, não acreditar que ela tem aquele nome
 <p align="center">
 <img src=https://github.com/marcosmorandi/hangman-python/blob/main/hangman-cartoon.jpg >
 </p>
-...123
+
+# Captura de tela
+[inserir uma captura aqui]
+
+# Rodando o projeto
+* git clone + a URL fornecida no botão "Code" acima.
+</br>ou</br>
+* Fazer o "Download ZIP" no botão "Code" acima.
