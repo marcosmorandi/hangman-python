@@ -18,11 +18,11 @@ Se nunca tiver ouvido falar na linguagem, não acreditar que ela tem aquele nome
 <br/>
 
 <p align="center">
-<img src=https://github.com/marcosmorandi/hangman-python/blob/main/hangman-cartoon.jpg >
+<img src="assets/hangman-cartoon.jpg">
 </p>
 
 # Captura de tela
-[inserir uma captura aqui]
+<img src="assets/print.png">
 
 # Rodando o projeto
 * git clone + a URL fornecida no botão "Code" acima.
