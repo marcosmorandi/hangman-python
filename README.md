@@ -17,3 +17,4 @@ Se nunca tiver ouvido falar na linguagem, não acreditar que ela tem aquele nome
 <p align="center">
 <img src=https://github.com/marcosmorandi/hangman-python/blob/main/hangman-cartoon.jpg >
 </p>
+...
