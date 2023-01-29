@@ -15,7 +15,7 @@ Acaba quando acertar a palavra ou errar 7 vezes.
 
 Se nunca tiver ouvido falar na linguagem, não acreditar que ela tem aquele nome ou ficar curioso para saber mais, no final tem um link para mais informações.
 
-<br/>
+<br>
 
 <p align="center">
 <img src="assets/hangman-cartoon.jpg">
@@ -26,5 +26,5 @@ Se nunca tiver ouvido falar na linguagem, não acreditar que ela tem aquele nome
 
 # Rodando o projeto
 * git clone + a URL fornecida no botão "Code" acima.
-</br>ou</br>
+<br>ou<br>
 * Fazer o "Download ZIP" no botão "Code" acima.
