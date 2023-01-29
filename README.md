@@ -20,3 +20,11 @@ Se nunca tiver ouvido falar na linguagem, não acreditar que ela tem aquele nome
 <p align="center">
 <img src=https://github.com/marcosmorandi/hangman-python/blob/main/hangman-cartoon.jpg >
 </p>
+
+# Captura de tela
+[inserir uma captura aqui]
+
+# Rodando o projeto
+* git clone + a URL fornecida no botão "Code" acima.
+</br>ou</br>
+* Fazer o "Download ZIP" no botão "Code" acima.
