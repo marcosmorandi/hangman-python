@@ -1,6 +1,6 @@
 # hangman-python
 
-# Descrição do projeto
+# :memo: Descrição do projeto
 Jogo da Forca, Hangman, desenvolvido em Python.
 
 Divertido jogo para testar o conhecimento ou aprender novas palavras.
@@ -21,10 +21,10 @@ Se nunca tiver ouvido falar na linguagem, não acreditar que ela tem aquele nome
 <img src="assets/hangman-cartoon.jpg">
 </p>
 
-# Captura de tela
+# :computer: Captura de tela
 <img src="assets/print.png">
 
-# Rodando o projeto
+# :man_technologist: Rodando o projeto
 * git clone + a URL fornecida no botão "Code" acima.
 <br>ou<br>
 * Fazer o "Download ZIP" no botão "Code" acima.
